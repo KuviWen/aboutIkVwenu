@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ik Vwenu's | Home</title>
+    <!-- <script src="/public/javascript/paperjs/paper-full.min.js"></script> -->
+    <!-- <script type="text/paperscript" canvas="TableTop" src="/public/javascript/paper.js"></script> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/49206fff58.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Kufam:wght@400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&family=Arimo:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/app.css">
+  </head>
+  
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" style="font-size: 1.2em;">
+      <a class="navbar-brand" href="/" style="font-family: 'Kufam', cursive;"><button
+          class="btn btn-sm border border-light rounded-circle" id="brand">IV</button>
+        IkVwenu's</a>
+    
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+    
+    
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              workspace
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item disabled font-italic font-weight-bold text-success" href="#">WorkAbouts</a>
+              <a class="dropdown-item" href="#">Notes</a>
+              <a class="dropdown-item" href="#">PlayGround</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item disabled font-italic font-weight-bold text-warning" href="#">Projects</a>
+            </div>
+          </li>
+    
+        </ul>
+    
+        <ul class="navbar-nav">
+    
+          <li class="nav-item active">
+            <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
+          </li>
+    
+          <li class="nav-item active">
+            <a class="nav-link" href="#">ALBUM</a>
+          </li>
+    
+        </ul>
+    
+      </div>
+    </nav>
+    
+    <div id="theTerminal" class="container">
+      
+      <div class="jumbotron rounded-lg theme1" id="Jarvis">
+    
+        <div class="border rounded-lg border-light" id="welcomingMessage"></div>
+        <div class="d-flex border border-lg rounded-pill justify-content-end align-items-center" id="controlPanel">
+    
+          <div id="" style="display: inline">
+            <select name="" id="fontSize">
+              <option value="">--font-size--</option>
+              <option value="12px">12</option>
+              <option value="14px">14</option>
+              <option value="16px">16</option>
+              <option value="18px">18</option>
+              <option value="24px">24</option>
+            </select>
+          </div>
+    
+          <button id="folder"><i class="fas fa-eye-slash"></i><i class="fas fa-eye hiddenToggle"></i></button>
+    
+          <div id="buttons" class="d-flex justify-content-end" style="padding-left: 2px">
+            <button class="btn themeButton" id="theme1">1</button>
+            <button class="btn themeButton" id="theme2">2</button>
+          </div>
+    
+        </div>
+        <div class="border rounded-lg" id="userInput">
+          <button>>></button>
+          <div id="inputBox"></div>
+          <span id="cursor"></span>
+          <input type="text" id="dummyBox" onblur="nullCursor()" spellcheck="false">
+        </div>
+    
+      </div>
+    </div>
+    
+    <script lang="javascript">
+      function nullCursor(){
+        document.getElementById("cursor").style.backgroundColor = "transparent";
+      }
+    </script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+    <script src="./public/resources/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="./public/javascript/app.js"></script>
+
+  </body>
+
+</html>
