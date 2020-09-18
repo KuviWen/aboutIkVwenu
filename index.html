@@ -18,13 +18,19 @@
         left: 0;
         top: 0;
         background-color: #242f3f;
-        transition: all 1s ease-out;
+        transition: all 0.8s ease-out 1s;
       }
     </style>
   </head>
   
   <body>
-    <div id="loading"></div>
+    <div id="loading">
+      <div class="wrap">
+        <div class="bounceball"></div>
+        <div class="text">NOW LOADING...</div>
+      </div>
+    </div>
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top" style="font-size: 1.2em;">
       <a class="navbar-brand" href="/" style="font-family: 'Kufam', cursive;"><button
           class="btn btn-sm border border-light rounded-circle" id="brand">IV</button>
